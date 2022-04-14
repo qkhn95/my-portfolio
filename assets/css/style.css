@@ -1,4 +1,9 @@
 :root {
+  --vivid-tangerine: #ffa69eff;
+--eggshell: #faf3ddff;
+--aero-blue: #b8f2e6ff;
+--powder-blue: #aed9e0ff;
+--black-coral: #5e6472ff;
 }
 
 * {
@@ -7,7 +12,7 @@
 
 body {
   margin: 0;
-  background-color: beige;
+  background-color: var(--eggshell);
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -17,6 +22,7 @@ body {
 }
 
 .nav-link-container {
+  margin: 0;
   flex-grow: 2;
   display: flex;
   flex-direction: row;x
@@ -28,13 +34,32 @@ body {
 
 .nav-link {
   text-decoration: none;
-  color: var();
+  color: var(--vivid-tangerine);
   font-size: 25px;
   font-weight: 550;
 }
 
 .nav-link:hover {
-  color: var();
+  color:var(--black-coral);
+}
+
+h1 {
+  margin: 0;
+  font-size: 50px;
+}
+
+footer {
+  flex-direction: row;
+}
+
+.contact-me {
+  margin: 0;
+  font-size: 25px;
+}
+
+hr {
+  color: var(--black-coral);
+  border: 1px dashed #000; width: 50%; margin: auto; margin-top: 0%; margin-bottom: 0%;
 }
 
 @media screen and (max-width: 576px) {
