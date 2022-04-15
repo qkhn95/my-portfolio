@@ -6,4 +6,8 @@ Updates
 
 ### 2 - Added navigation bar, updating css
 
-### 3 - added contacts section at bottom and image for about me section
+### 3 - Added contacts section at bottom and image for about me section
+
+### 4 - Made sure nav links are now operational
+
+### 5 - Footer now complete, need to start on My Projects section

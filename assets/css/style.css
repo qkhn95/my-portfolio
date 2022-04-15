@@ -1,9 +1,15 @@
 :root {
   --vivid-tangerine: #ffa69eff;
---eggshell: #faf3ddff;
---aero-blue: #b8f2e6ff;
---powder-blue: #aed9e0ff;
---black-coral: #5e6472ff;
+  --eggshell: #faf3ddff;
+  --aero-blue: #b8f2e6ff;
+  --powder-blue: #aed9e0ff;
+  --black-coral: #5e6472ff;
+  --background-white: #f4f4f5;
+  --amethyst: #9b5de5ff;
+  --magenta-crayola: #f15bb5ff;
+  --minion-yellow: #fee440ff;
+  --capri: #00bbf9ff;
+  --sea-green-crayola: #00f5d4ff;
 }
 
 * {
@@ -12,8 +18,9 @@
 
 body {
   margin: 0;
-  background-color: var(--eggshell);
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin-left: 5;
+  background-color: var(--background-white);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .nav-container {
@@ -25,11 +32,15 @@ body {
   margin: 0;
   flex-grow: 2;
   display: flex;
-  flex-direction: row;x
+  flex-direction: row-reverse;
 }
 
 .nav-link-item {
   margin: 20px;
+}
+
+.logo {
+  flex-direction: row;
 }
 
 .nav-link {
@@ -40,16 +51,66 @@ body {
 }
 
 .nav-link:hover {
-  color:var(--black-coral);
+  color: var(--amethyst);
 }
 
 h1 {
   margin: 0;
-  font-size: 50px;
+  font-size: 60px;
+  color: royalblue;
 }
+
+h2 {
+  margin: 10;
+  font-size: 30px;
+  color: var(--amethyst);
+  font-family: Arial;
+  position: center;
+}
+
+h3 {
+  margin: 10;
+  font-size: 45px;
+  color: var(--amethyst);
+  font-family: Arial;
+  position: center;
+}
+
+div.relative {
+  position: relative;
+  width: 200px;
+  height: 400px;
+  margin: 0;
+  padding: 0;
+}
+
+div.absolute {
+  position: absolute;
+  left: 80px;
+  height: 400px;
+  width: 200px;
+}
+
+.center-image {
+  margin: 0;
+  width: 150px;
+  position: relative;
+}
+
+/* have my projects section here */
+
+/* ----------------------------- */
 
 footer {
   flex-direction: row;
+}
+
+.nav-link-container-1 {
+  margin: 0;
+  flex-grow: 2;
+  display: flex;
+  flex-direction: row;
+  flex-direction: unset;
 }
 
 .contact-me {
@@ -59,18 +120,46 @@ footer {
 
 hr {
   color: var(--black-coral);
-  border: 1px dashed #000; width: 50%; margin: auto; margin-top: 0%; margin-bottom: 0%;
+  border: 1px dashed #000;
+  width: 50%;
+  margin: auto;
+  margin-top: 0%;
+  margin-bottom: 0%;
 }
 
 @media screen and (max-width: 576px) {
-    .nav-container{
-        flex-direction: column;
-        align-items: center;
-    }
+  .nav-container {
+    flex-direction: column;
+    align-items: center;
+  }
 
-    .nav-link-container {
-        flex-direction: column;
-        align-items: center;
-    }
-    
+  .nav-link-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .logo {
+    position: sticky;
+    top: 10px;
+  }
+
+  .img-item {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .center-image {
+    flex-direction: column;
+    align-items: right;
+  }
+
+  .p {
+    flex-direction: column;
+    align-items: right;
+  }
+
+  .nav-link-container-1 {
+    flex-direction: column;
+    align-items: center;
+  }
 }
