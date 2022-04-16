@@ -11,3 +11,5 @@ Updates
 ### 4 - Made sure nav links are now operational
 
 ### 5 - Footer now complete, need to start on My Projects section
+
+### 6 - Changed Footer section as causing issues in media display mode

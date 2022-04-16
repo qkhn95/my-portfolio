@@ -17,19 +17,20 @@
 }
 
 body {
-  margin: 0;
-  margin-left: 5;
+  margin: 0.5%;
   background-color: var(--background-white);
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
 }
 
 .nav-container {
   display: flex;
   flex-direction: row;
+  margin: 0px;
 }
 
 .nav-link-container {
-  margin: 0;
+  margin: 0px;
   flex-grow: 2;
   display: flex;
   flex-direction: row-reverse;
@@ -37,10 +38,6 @@ body {
 
 .nav-link-item {
   margin: 20px;
-}
-
-.logo {
-  flex-direction: row;
 }
 
 .nav-link {
@@ -58,6 +55,7 @@ h1 {
   margin: 0;
   font-size: 60px;
   color: royalblue;
+  position: center;
 }
 
 h2 {
@@ -69,7 +67,7 @@ h2 {
 }
 
 h3 {
-  margin: 10;
+  margin: 15;
   font-size: 45px;
   color: var(--amethyst);
   font-family: Arial;
@@ -92,30 +90,38 @@ div.absolute {
 }
 
 .center-image {
-  margin: 0;
-  width: 150px;
-  position: relative;
+  display: block;
+  margin-right: auto;
+
+  width: 185px;
 }
 
 /* have my projects section here */
 
 /* ----------------------------- */
 
-footer {
-  flex-direction: row;
-}
-
 .nav-link-container-1 {
   margin: 0;
+  padding: 0%;
   flex-grow: 2;
   display: flex;
   flex-direction: row;
-  flex-direction: unset;
+}
+
+.nav-link-item-1 {
+  margin: 60px;
 }
 
 .contact-me {
+  text-align: center;
   margin: 0;
   font-size: 25px;
+}
+
+.footer-wording {
+  color: var(--amethyst);
+  font-family: Tahoma;
+  font-weight: bolder;
 }
 
 hr {
@@ -124,7 +130,7 @@ hr {
   width: 50%;
   margin: auto;
   margin-top: 0%;
-  margin-bottom: 0%;
+  margin-bottom: 0.5%;
 }
 
 @media screen and (max-width: 576px) {
@@ -138,9 +144,9 @@ hr {
     align-items: center;
   }
 
-  .logo {
-    position: sticky;
-    top: 10px;
+  h1 h2 h3 {
+    flex-direction: column;
+    align-items: center;
   }
 
   .img-item {
@@ -150,12 +156,12 @@ hr {
 
   .center-image {
     flex-direction: column;
-    align-items: right;
+    align-items: center;
   }
 
   .p {
     flex-direction: column;
-    align-items: right;
+    align-items: center;
   }
 
   .nav-link-container-1 {
