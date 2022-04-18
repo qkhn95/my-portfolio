@@ -27,6 +27,7 @@ body {
   display: flex;
   flex-direction: row;
   margin: 0px;
+  justify-content: space-between;
 }
 
 .nav-link-container {
@@ -97,19 +98,58 @@ div.absolute {
 }
 
 /* have my projects section here */
+.main {
+  display: flex;
+  margin: 2%;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.card-1-container {
+  flex: 1 0 0;
+  padding: 10px;
+  text-align: center;
+  position: relative;
+}
+
+.card-1-container img {
+  width: 1484px;
+  opacity: 50%;
+}
+
+.card-1-container :hover {
+  opacity: 100%;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-decoration: solid;
+  font-size: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--eggshell);
+}
+
+.centered :hover {
+  color: #000;
+}
 
 /* ----------------------------- */
 
 .nav-link-container-1 {
-  margin: 0;
+  margin: 2%;
   padding: 0%;
   flex-grow: 2;
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
 }
 
 .nav-link-item-1 {
-  margin: 60px;
+  margin: 30px;
 }
 
 .contact-me {
