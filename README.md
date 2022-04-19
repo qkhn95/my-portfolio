@@ -1,6 +1,6 @@
 # my-portfolio
 
-## Updates
+# Updates
 
 ## 1 - Basic set up of how I want website to look
 
@@ -32,19 +32,31 @@ Footer was not working on media display mode so this has now changed to section 
 
 Added the individual project cards on to webpage. Having issues with flexbox as cards are overlapping the page. However cards are working media query mode
 
-## Technologies
+## 8 - Project cards section working
+
+Card section is now working with cards aligned in 2 rows!!
+
+# ALL PROJECT LINKS ARE LINKED TO HORISEON WEBPAGE
+
+# Technologies
 
 - HTML
 - CSS
 - Github Pages
 - coolers.co
 - unsplash.com
-- Paint (to edit screenshots)
+- Paint (to edit screenshot)
 
-## Screenshots
+# Screenshots
 
 ### DESKTOP VIEW
+
+![desktop view](./assets/images/desktop-screenshot.png)
 
 ### MOBILE VIEW
 
 ![mobile view](./assets/images/mobile-screenshot.png)
+
+# GITHUB LINK
+
+https://github.com/qkhn95/my-portfolio/tree/dev

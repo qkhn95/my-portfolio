@@ -23,6 +23,8 @@ body {
   text-align: center;
 }
 
+/* navigation link */
+
 .nav-container {
   display: flex;
   flex-direction: row;
@@ -51,6 +53,7 @@ body {
 .nav-link:hover {
   color: var(--amethyst);
 }
+/* ............... */
 
 h1 {
   margin: 0;
@@ -108,8 +111,6 @@ div.absolute {
 .main {
   display: flex;
   margin: 2%;
-  flex-direction: row;
-  justify-content: center;
 }
 
 .card-1-container {
@@ -133,19 +134,19 @@ div.absolute {
   transition: opacity 1s;
 }
 
-.card-container {
+.flex-container {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  padding: 10px;
-  text-align: row;
-  border-style: solid;
-  border-width: 1.5px;
-  margin: 5;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 .card-container img {
-  width: 400px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 15px;
+  margin: 5px;
+  width: 500px;
   opacity: 40%;
 }
 
@@ -237,7 +238,7 @@ hr {
   .card-1-container img {
     flex-direction: column;
     align-items: center;
-    width: 300px;
+    width: 330px;
   }
 
   .centered {
@@ -246,7 +247,7 @@ hr {
     font-size: 20px;
   }
 
-  .card-2-container {
+  .flex-container {
     flex-direction: column;
     align-items: center;
   }
@@ -260,7 +261,7 @@ hr {
   .card-container img {
     flex-direction: column;
     align-items: center;
-    width: 240px;
+    width: 280px;
   }
 
   .centered-1 {
