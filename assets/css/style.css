@@ -1,0 +1,272 @@
+:root {
+  --vivid-tangerine: #ffa69eff;
+  --eggshell: #faf3ddff;
+  --aero-blue: #b8f2e6ff;
+  --powder-blue: #aed9e0ff;
+  --black-coral: #5e6472ff;
+  --background-white: #f4f4f5;
+  --amethyst: #9b5de5ff;
+  --magenta-crayola: #f15bb5ff;
+  --minion-yellow: #fee440ff;
+  --capri: #00bbf9ff;
+  --sea-green-crayola: #00f5d4ff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0.5%;
+  background-color: var(--background-white);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+}
+
+/* navigation link */
+
+.nav-container {
+  display: flex;
+  flex-direction: row;
+  margin: 0px;
+  justify-content: space-between;
+}
+
+.nav-link-container {
+  margin: 0px;
+  flex-grow: 2;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.nav-link-item {
+  margin: 20px;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: var(--vivid-tangerine);
+  font-size: 25px;
+  font-weight: 550;
+}
+
+.nav-link:hover {
+  color: var(--amethyst);
+}
+/* ............... */
+
+h1 {
+  margin: 0;
+  font-size: 60px;
+  color: var(--amethyst);
+  position: center;
+}
+
+h2 {
+  margin: 10;
+  font-size: 30px;
+  color: var(--amethyst);
+  font-family: Arial;
+  position: center;
+}
+
+h3 {
+  margin: 15;
+  font-size: 45px;
+  color: var(--amethyst);
+  font-family: Arial;
+  position: center;
+}
+
+div.relative {
+  position: relative;
+  align-items: left;
+  width: 200px;
+  height: 400px;
+  margin: 0;
+  padding: 0;
+}
+
+div.absolute {
+  position: absolute;
+  align-items: center;
+  left: 80px;
+  height: 400px;
+  width: 200px;
+}
+
+.absolute {
+  font-family: Arial;
+  font-style: bold;
+  color: var(--amethyst);
+}
+
+.center-image {
+  align-items: center;
+
+  width: 185px;
+}
+
+/* have my projects section here */
+.main {
+  display: flex;
+  margin: 2%;
+}
+
+.card-1-container {
+  flex: 1 0 0;
+  flex-direction: row;
+  align-items: right;
+  padding: 10px;
+  text-align: center;
+  position: relative;
+  border-style: solid;
+  border-width: 1.5px;
+}
+
+.card-1-container img {
+  width: 1484px;
+  opacity: 40%;
+}
+
+.card-1-container :hover {
+  opacity: 100%;
+  transition: opacity 1s;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.card-container img {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 15px;
+  margin: 5px;
+  width: 500px;
+  opacity: 40%;
+}
+
+.card-container :hover {
+  opacity: 100%;
+  transition: opacity 1s;
+}
+
+/* ----------------------------- */
+
+.nav-link-container-1 {
+  margin: 0;
+  padding: 0%;
+  flex-grow: 2;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.nav-link-item-1 {
+  margin: 30px;
+}
+
+.contact-me {
+  text-align: center;
+  margin: 0;
+  font-size: 25px;
+}
+
+.footer-wording {
+  color: var(--amethyst);
+  font-family: Tahoma;
+  font-weight: bolder;
+}
+
+hr {
+  color: var(--black-coral);
+  border: 1px dashed #000;
+  width: 50%;
+  margin: auto;
+  margin-top: 0.5%;
+  margin-bottom: 0.5%;
+}
+
+@media screen and (max-width: 576px) {
+  .nav-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-link-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  h1 h2 h3 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .img-item {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .center-image {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .absolute {
+    flex-direction: column;
+    align-items: center;
+
+    font-size: 16px;
+  }
+
+  .nav-link-container-1 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card-1-container {
+    flex-direction: column;
+    align-items: center;
+    border-style: none;
+  }
+
+  .card-1-container img {
+    flex-direction: column;
+    align-items: center;
+    width: 330px;
+  }
+
+  .centered {
+    flex-direction: column;
+    align-items: center;
+    font-size: 20px;
+  }
+
+  .flex-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card-container {
+    flex-direction: column;
+    align-items: center;
+    border-style: none;
+  }
+
+  .card-container img {
+    flex-direction: column;
+    align-items: center;
+    width: 280px;
+  }
+
+  .centered-1 {
+    flex-direction: column;
+    align-items: center;
+    font-size: 20px;
+  }
+}
